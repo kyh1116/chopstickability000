@@ -1,0 +1,36 @@
+
+
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+  <div class="navbar navbar-expand-lg navbar-light mb-4" >
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'home' %}">ChopstickAbility</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav">
+          <button class="nav-item">
+            <a class="nav-link" href="{% url 'home' %}">Home</a>
+          </button>
+          <button class="nav-item">
+            <a class="nav-link" href="{% url 'image_upload' %}">Game</a>
+          </button>
+          <button class="nav-item">
+            <a class="nav-link" href="{% url 'video_input' %}">Tutorial</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2 class="card-title">ChopstickAbility</h2>
+  <p class="card-text">
+    You can do it *^ㅡ^*
+
+  </p>
+  <p class="card-text">
+    Trust and Try!<br>
+  </p>
+{% endblock %}

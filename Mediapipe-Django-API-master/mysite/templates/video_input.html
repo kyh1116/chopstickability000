@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <html>
+        <head>
+           <script>
+                function call_counter(url) {
+                    window.open(url);
+                }
+            </script>
+        </head>
+        <body>
+
+            <table>
+                <tr>
+                    <td width="50%">
+
+                        <img src="http://127.0.0.1:8000/video_input/video_stream" style="width:800px;" />
+
+
+
+                    </td>
+                </tr>
+            </table>
+
+
+
+        </body>
+    </html>
+{% endblock %}
